@@ -1,0 +1,31 @@
+version: "3.1"
+services:
+
+    mariadb:
+      image: kristoferbain/mariadb
+      hostname: db
+      container_name: mariadb
+      working_dir: /gunstudio
+      volumes:
+        - ./volumes/mysql_dev:/var/lib/mysql
+      environment:
+        - MYSQL_ROOT_PASSWORD=xsadwqe
+        - MYSQL_DATABASE=gunstudio
+        - MYSQL_USER=admin
+        - MYSQL_PASSWORD=xsadwqe
+
+    php-apache:
+      image: kristoferbain/php-apache
+      hostname: php
+      container_name: php
+      working_dir: /gunstudio
+      volumes:
+        - ./volumes/php/var/cache:/var/www/dev/var/cache/:rw
+        - ./volumes/php/var/sessions:/var/www/dev/var/sessions/:rw
+        - ./volumes/php/var/logs:/var/www/dev/var/logs/:rw
+        - ./volumes/apache/logs:/var/log/apache2/
+        - ./:/var/www/html/
+      ports:
+       - "8181:80"
+      depends_on: 
+        - mariadb
