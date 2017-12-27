@@ -11888,7 +11888,7 @@ body > .x-mask {
 
 .x-message-box-question {
     font: 44px/1 FontAwesome;
-    color: grey
+    color: #E9EFF4;
 }
 
 .x-message-box-question:before {
