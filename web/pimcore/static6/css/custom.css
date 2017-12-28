@@ -42,3 +42,85 @@ span {
 p{
 
 }
+
+
+/** Window body styles **/
+.x-window-default {
+	border-color: #4C0D83;
+}
+
+.x-window-header-default {
+	border-color: #4C0D83;
+}
+
+.x-window-header-default-top {
+	background-color: #4C0D83;
+}
+
+.x-window-header-default .x-tool-img {
+	background-color: #4C0D83;
+}
+
+.x-window-body-default {
+	color: #818181;
+}
+/** Window body styles end **/
+
+
+/** Message box styles **/
+.x-message-box-question {
+	color: #E9EFF4;
+}
+
+.x-toolbar-footer {
+	background: none;
+}
+/** Message box styles end **/
+
+
+/** Button styles **/
+.x-btn {
+	border-radius: 19px;
+}
+
+.x-btn-inner-default-small {
+	color: #ffffff;
+	font-weight: 700;
+}
+
+/* Default */
+.x-btn-default-small, .x-btn-default-medium, .x-btn-default-large {
+	border-color: #41C0B0;
+	background-color: #41C0B0;
+}
+
+/* Focus */
+.x-btn-focus.x-btn-default-small, .x-btn-focus.x-btn-default-medium, .x-btn-focus.x-btn-default-large {
+	border-color: #41C0B0;
+	background-color: #41C0B0;
+}
+
+/* Hover */
+.x-btn-over.x-btn-default-small, .x-btn-over.x-btn-default-medium, .x-btn-over.x-btn-default-large {
+	border-color: #41C0B0;
+	background-color: #41C0B0;
+}
+
+/* Pressed */
+.x-btn.x-btn-menu-active.x-btn-default-small, .x-btn.x-btn-pressed.x-btn-default-small {
+	border-color: #41C0B0;
+	background-image: none;
+	background-color: #41C0B0;
+}
+/** Button styles end **/
+
+
+/* Input box styles */
+.x-form-trigger-wrap-default {
+    border-color: #E9EFF4;
+}
+
+.x-form-trigger-wrap-default.x-form-trigger-wrap-focus {
+	border-color: #d0d0d0;
+}
+/* Input box styles end */
