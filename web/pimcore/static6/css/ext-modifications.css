@@ -186,16 +186,16 @@ body > .x-mask {
 }
 
 .x-btn-default-small, .x-btn-default-medium, .x-btn-default-large {
-    border-color: #41C0B0;
+    border-color: #000;
 }
 
 .x-btn-over.x-btn-default-small, .x-btn-over.x-btn-default-medium, .x-btn-over.x-btn-default-large {
-    border-color: #41C0B0;
-    background-color: #41C0B0;
+    border-color: #000;
+    background-color: #000;
 }
 
 .x-form-trigger-wrap-default.x-form-trigger-wrap-focus {
-    border-color: #d0d0d0;
+    border-color: #000;
 }
 
 .x-panel-default {
