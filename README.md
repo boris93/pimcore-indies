@@ -28,3 +28,4 @@ Please have a look at our [contributing guide](CONTRIBUTING.md).
 ## Copyright and license 
 Copyright: [Pimcore](http://www.pimcore.org) GmbH  
 For licensing details please visit [LICENSE.md](LICENSE.md) 
+
