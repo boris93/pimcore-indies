@@ -189,7 +189,8 @@ $styles = array(
     "/pimcore/static6/js/lib/ext/classic/theme-triton/resources/theme-triton-all.css",
     "/pimcore/static6/js/lib/ext/classic/theme-triton/resources/charts-all" . $debugSuffix . ".css",
     "/pimcore/static6/css/admin.css",
-    "/pimcore/static6/css/custom.css"
+    "/pimcore/static6/css/custom/common.css",
+    "/pimcore/static6/css/custom/editor-page.css"    
 );
 ?>
 
