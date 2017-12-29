@@ -55,6 +55,24 @@ p{
 }
 
 
+/* Left panel */
+
+#pimcore_navigation li:hover {
+    background-color: #4b0d83;     
+}
+
+#pimcore_navigation li:hover:after{
+	background-color: #4b0d83;
+}
+
+#pimcore_signet{
+	background-image: url('/pimcore/static6/img/gunstudio-icon-light.png');
+    background-repeat: no-repeat;
+	background-size: 40px 35px;
+    background-position: 8px 6px;
+}
+
+
 /** Window body styles **/
 .x-window-default {
 	border-color: #4C0D83;
