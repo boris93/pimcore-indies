@@ -57,6 +57,10 @@ p{
 
 /* Left panel */
 
+#pimcore_navigation{
+	top: 10px;
+}
+
 .pimcore_navigation_flyout .x-menu-body-default{
 	background-color: #62209d;
 }
