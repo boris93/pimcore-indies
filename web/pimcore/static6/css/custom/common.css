@@ -7,6 +7,13 @@ body {
 	background: #4C0D83;
 }
 
+#pimcore_panel_tabs-body{
+	background-image: url(/pimcore/static6/img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 500px;
+}
+
 h1 {
 
 }
