@@ -166,5 +166,18 @@ pimcore.element.abstract = Class.create({
                 }
             }.bind(this)
         );
-    }
+    },
+    
+	getHeader: function(){
+		var userName = pimcore.globalmanager.get("user").name;
+		if(userName){
+			return Ext.create({
+				xtype: "grid",
+				id: "document_header_" + this.id,
+				region: "north",
+				cls: "main-editor-header",
+				title: t("welcome") + " " + userName
+		    });
+        }
+    },
 });

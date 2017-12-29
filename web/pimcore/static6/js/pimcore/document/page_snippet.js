@@ -31,6 +31,7 @@ pimcore.document.page_snippet = Class.create(pimcore.document.document, {
             hideMode: "offsets",
             layout: "border",
             items: [
+	            this.getHeader(),
                 this.getLayoutToolbar(),
                 this.getTabPanel()
             ],

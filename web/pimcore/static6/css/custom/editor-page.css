@@ -8,12 +8,12 @@
 
 #pimcore_panel_tabs > .x-tab-bar > .x-tab-bar-body .x-tab-active,
 .x-tab-bar-default {
-	background: #EAEFF4;
+	background: #ececec;
 }
 
 .main-toolbar.x-toolbar-default {
-	background: #EAEFF4;
-    border-bottom: 1px solid #EAEFF4 !important;
+	background: #ffffff;
+	border-bottom: 1px solid #ffffff !important;
 }
 
 #pimcore_panel_tabs > .x-tab-bar .x-tab-default-top {
@@ -34,5 +34,14 @@
 }
 
 #pimcore_panel_tabs > .x-panel-body > .x-tabpanel-child {
-	border-color: #EAEFF4;
+	border-color: #ededed;
+}
+
+.main-editor-header .x-title-text{
+	text-align: right;
+	color: #4c0e83;
+}
+
+.main-editor-header .x-panel-body, .main-editor-header .x-grid-header-ct{
+	display:none;
 }
