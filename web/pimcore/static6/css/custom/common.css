@@ -57,12 +57,20 @@ p{
 
 /* Left panel */
 
+.pimcore_navigation_flyout .x-menu-body-default{
+	background-color: #62209d;
+}
+
 #pimcore_navigation li:hover {
     background-color: #4b0d83;     
 }
 
 #pimcore_navigation li:hover:after{
 	background-color: #4b0d83;
+}
+
+#pimcore_avatar{
+	background: #4b0d83;
 }
 
 #pimcore_signet{
@@ -72,6 +80,13 @@ p{
     background-position: 8px 6px;
 }
 
+.x-menu-item-default.x-menu-item-active{
+	background: #4b0d83;
+}
+
+.x-menu-item-link:hover{
+	background: #4b0d83;
+}
 
 /** Window body styles **/
 .x-window-default {
