@@ -171,7 +171,7 @@ pimcore.object.object = Class.create(pimcore.object.abstract, {
             title: this.data.general.o_key,
             closable:true,
             layout: "border",
-            items: [this.getLayoutToolbar(),this.getTabPanel()],
+            items: [this.getHeader(), this.getLayoutToolbar(),this.getTabPanel()],
             object: this,
             cls: "pimcore_class_" + this.data.general.o_className,
             iconCls: iconClass
@@ -343,7 +343,7 @@ pimcore.object.object = Class.create(pimcore.object.abstract, {
             this.toolbarButtons.save = new Ext.SplitButton({
                 text: t('save'),
                 iconCls: "pimcore_icon_save_white",
-                cls: "pimcore_save_button",
+                cls: "pimcore_save_button pimcore_toolbar_left_button",
                 scale: "medium",
                 handler: this.save.bind(this, "unpublish"),
                 menu:[{
@@ -357,7 +357,7 @@ pimcore.object.object = Class.create(pimcore.object.abstract, {
             this.toolbarButtons.publish = new Ext.SplitButton({
                 text: t('save_and_publish'),
                 iconCls: "pimcore_icon_save_white",
-                cls: "pimcore_save_button",
+                cls: "pimcore_save_button pimcore_toolbar_left_button",
                 scale: "medium",
                 handler: this.publish.bind(this),
                 menu: [{
@@ -380,8 +380,8 @@ pimcore.object.object = Class.create(pimcore.object.abstract, {
 
             this.toolbarButtons.unpublish = new Ext.Button({
                 text: t('unpublish'),
-                iconCls: "pimcore_icon_unpublish",
                 scale: "medium",
+                cls: "pimcore_toolbar_left_button",
                 handler: this.unpublish.bind(this)
             });
 

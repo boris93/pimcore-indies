@@ -574,7 +574,6 @@ pimcore.document.tree = Class.create({
             if (record.data.published && record.data.permissions.unpublish && perspectiveCfg.inTreeContextMenu("document.unpublish")) {
                 menu.add(new Ext.menu.Item({
                     text: t('unpublish'),
-                    iconCls: "pimcore_icon_unpublish",
                     handler: this.publishDocument.bind(this, tree, record, 'unpublish')
                 }));
             } else if(!record.data.published && record.data.permissions.publish && perspectiveCfg.inTreeContextMenu("document.publish")) {

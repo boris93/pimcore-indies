@@ -75,7 +75,7 @@ pimcore.asset.asset = Class.create(pimcore.element.abstract, {
             title: tabTitle,
             closable:true,
             layout: "border",
-            items: [this.getLayoutToolbar(),this.getTabPanel()],
+            items: [this.getHeader(), this.getLayoutToolbar(),this.getTabPanel()],
             asset: this,
             iconCls: iconClass
         });
@@ -138,7 +138,7 @@ pimcore.asset.asset = Class.create(pimcore.element.abstract, {
                 this.toolbarButtons.publish = Ext.create("Ext.button.Split", {
                     text: t("save_and_publish"),
                     iconCls: "pimcore_icon_save_white",
-                    cls: "pimcore_save_button",
+                    cls: "pimcore_save_button pimcore_toolbar_left_button",
                     scale: "medium",
                     handler: this.save.bind(this),
                     menu: [{

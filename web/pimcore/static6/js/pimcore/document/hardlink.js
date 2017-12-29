@@ -73,6 +73,7 @@ pimcore.document.hardlink = Class.create(pimcore.document.document, {
             closable: true,
             layout: "border",
             items: [
+            	this.getHeader(),
                 this.getLayoutToolbar(),
                 this.getTabPanel()
             ],
@@ -123,7 +124,7 @@ pimcore.document.hardlink = Class.create(pimcore.document.document, {
             this.toolbarButtons.publish = new Ext.Button({
                 text: t('save_and_publish'),
                 iconCls: "pimcore_icon_save_white",
-                cls: "pimcore_save_button",
+                cls: "pimcore_save_button pimcore_toolbar_left_button",
                 scale: "medium",
                 handler: this.publish.bind(this)
             });
@@ -131,8 +132,8 @@ pimcore.document.hardlink = Class.create(pimcore.document.document, {
 
             this.toolbarButtons.unpublish = new Ext.Button({
                 text: t('unpublish'),
-                iconCls: "pimcore_icon_unpublish",
                 scale: "medium",
+                cls: "pimcore_toolbar_left_button",
                 handler: this.unpublish.bind(this)
             });
 

@@ -6,9 +6,21 @@
     background-repeat: no-repeat;
 }
 
-#pimcore_panel_tabs > .x-tab-bar > .x-tab-bar-body .x-tab-active,
-.x-tab-bar-default {
+#pimcore_panel_tabs > .x-tab-bar > .x-tab-bar-body .x-tab-active {
 	background: #ececec;
+}
+
+.main-editor-header .x-title-text{
+	text-align: right;
+	color: #63209D;
+}
+
+.main-editor-header .x-panel-body, .main-editor-header .x-grid-header-ct{
+	display:none;
+}
+
+.x-tab-bar-default, .x-toolbar-default {
+	background: #ffffff;
 }
 
 .main-toolbar.x-toolbar-default {
@@ -37,11 +49,76 @@
 	border-color: #ededed;
 }
 
-.main-editor-header .x-title-text{
-	text-align: right;
-	color: #4c0e83;
+.x-tab-default-top, .x-tabpanel-child .x-docked-left .x-btn {
+	background-color: #f5f5f5;
+	border-color: #f5f5f5;
+	box-shadow: none;
+	color: #9c9c9c;
 }
 
-.main-editor-header .x-panel-body, .main-editor-header .x-grid-header-ct{
-	display:none;
+.main-toolbar .x-btn-inner {
+	font-weight: 700;
+}
+
+.main-toolbar .x-btn {
+	height: 30px;
+	padding-top: 4px;
+	border-radius: 0;
+	border-color: #f6f6f6;
+}
+
+.main-toolbar .x-btn-wrap-default-toolbar-medium.x-btn-split-right:after,
+.main-toolbar .x-btn-wrap-default-toolbar-medium.x-btn-arrow-right:after {
+	padding-top: 4px;
+}
+
+.x-tab-over.x-tab-default.x-tab-over,
+.main-toolbar .x-btn.x-btn-over, 
+.x-tabpanel-child .x-docked-left .x-btn.x-btn-over {
+	background-color: #f2f2f2;
+	border-color: #f2f2f2;
+}
+
+.pimcore_body .x-tab-default-top.x-tab-active {
+	border-top: 4px solid #63209D;
+	background-color: #f6f6f6;
+	border-radius: 0;
+	color: #63209D;
+}
+
+.pimcore_body .x-tab-over.x-tab-default.x-tab-over.x-tab-active {
+	border-top: 4px solid #63209D;
+	background-color: #f2f2f2;
+}
+
+.x-tab.x-tab-active.x-tab-default .x-tab-inner-default,
+.x-tab-inner-default {
+	color: inherit;
+}
+
+.pimcore_toolbar_left_button.x-btn {
+	border-radius: 19px;
+	border-color: #d8d8d8;
+	color: #9c9c9c;
+}
+
+.pimcore_toolbar_left_button.x-btn.x-btn-over {
+	border-color: #d8d8d8;
+}
+
+.pimcore_save_button.x-btn, 
+.pimcore_save_button.x-btn-over, 
+.pimcore_save_button.x-btn-menu-active.x-btn, 
+.pimcore_save_button.x-btn-focus {
+	background: #41C0B0 !important;
+	border-color: #41C0B0 !important;
+	color: #ffffff;
+}
+
+.x-btn-wrap-default-toolbar-medium.x-btn-split-right > .x-btn-button:after {
+	border: 0;
+}
+
+.main-toolbar .x-btn-inner-default-toolbar-medium{
+	color: inherit;
 }

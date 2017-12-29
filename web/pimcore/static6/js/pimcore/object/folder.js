@@ -99,6 +99,7 @@ pimcore.object.folder = Class.create(pimcore.object.abstract, {
             closable:true,
             layout: "border",
             items: [
+            	this.getHeader(),
                 this.getLayoutToolbar(),
                 this.getTabPanel()
             ],
@@ -166,7 +167,7 @@ pimcore.object.folder = Class.create(pimcore.object.abstract, {
             this.toolbarButtons.publish = new Ext.Button({
                 text: t('save'),
                 iconCls: "pimcore_icon_save_white",
-                cls: "pimcore_save_button",
+                cls: "pimcore_save_button pimcore_toolbar_left_button",
                 scale: "medium",
                 handler: this.save.bind(this)
             });
