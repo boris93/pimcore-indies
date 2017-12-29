@@ -122,3 +122,7 @@
 .main-toolbar .x-btn-inner-default-toolbar-medium{
 	color: inherit;
 }
+
+.pimcore_icon_save {
+	display: none;
+}
