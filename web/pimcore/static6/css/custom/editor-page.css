@@ -1,5 +1,9 @@
 #pimcore_panel_tabs > .x-tab-bar {
 	background: #4C0D83;
+    background-image: url(/pimcore/static6/img/header-bg.png);
+    background-position: right -5px top 0px;
+    background-size: 360px auto;
+    background-repeat: no-repeat;
 }
 
 #pimcore_panel_tabs > .x-tab-bar > .x-tab-bar-body .x-tab-active,
