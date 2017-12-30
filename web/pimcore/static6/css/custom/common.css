@@ -97,7 +97,7 @@ p{
 }
 
 #pimcore_navigation li:hover:after{
-	background-color: #4b0d83;
+	background-color: transparent;
 }
 
 #pimcore_status{

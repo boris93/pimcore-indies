@@ -1086,7 +1086,7 @@ pimcore.layout.toolbar = Class.create({
             e.stopEvent();
             var el = Ext.get(e.currentTarget);
             var offsets = el.getOffsetsTo(Ext.getBody());
-            offsets[0] = 60;
+            offsets[0] = 85;
             this.showAt(offsets);
         } else {
             this.hide();
