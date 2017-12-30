@@ -5,6 +5,11 @@ body {
 
 #pimcore_body {
 	background: #4C0D83;
+	padding: 10px 0px 0 90px !important;
+}
+
+.x-panel-body{
+
 }
 
 #pimcore_panel_tabs-body{
@@ -59,6 +64,7 @@ p{
 
 #pimcore_navigation{
 	top: 10px;
+	left: 12px;
 }
 
 .pimcore_navigation_flyout .x-menu-body-default{
@@ -69,19 +75,55 @@ p{
     background-color: #4b0d83;     
 }
 
+#pimcore_navigation li > svg{
+
+}
+
+#pimcore_navigation li{
+	height: 60px;
+}
+
+#pimcore_navigation li .custom_menu_tile {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    width: 100%;
+    color: #969696;
+    font-weight: bold;
+}
+
+#pimcore_navigation li:hover .custom_menu_tile {
+    color: #ffffff;
+}
+
 #pimcore_navigation li:hover:after{
 	background-color: #4b0d83;
 }
 
+#pimcore_status{
+	left: 25px;
+}
+
+#pimcore_logout{
+	left: 17px;
+}
+
+#pimcore_logout svg {
+    left: 20px;
+    width: 16px;
+}
+
 #pimcore_avatar{
 	background: #4b0d83;
+	left: 16px;
 }
 
 #pimcore_signet{
 	background-image: url('/pimcore/static6/img/gunstudio-icon-light.png');
     background-repeat: no-repeat;
 	background-size: 40px 35px;
-    background-position: 8px 6px;
+    background-position: center;
+	width: 90px;
 }
 
 .x-menu-item-default.x-menu-item-active{
