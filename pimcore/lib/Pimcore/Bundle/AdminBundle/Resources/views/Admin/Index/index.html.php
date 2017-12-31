@@ -124,7 +124,7 @@ $runtimePerspective = \Pimcore\Config::getRuntimePerspective($user);
         <?php if (\Pimcore\Config::inPerspective($runtimePerspective, "extras")) { ?>
             <li id="pimcore_menu_extras" class="pimcore_menu_item pimcore_menu_needs_children">
                 <svg id="icon-tools" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"><path d="M23.65,19.34l-8.23-8.23A7.44,7.44,0,0,0,5.24,1.73l5,5L6.74,10.25l-5-5a7.44,7.44,0,0,0,9.38,10.18l8.23,8.23a1.11,1.11,0,0,0,1.61,0l2.7-2.7A1.11,1.11,0,0,0,23.65,19.34Z" transform="translate(-1 -1)"/></svg>
-                <div class="custom_menu_tile">Extras</div>
+                <div class="custom_menu_tile">Tools</div>
             </li>
         <?php } ?>
         <?php if (\Pimcore\Config::inPerspective($runtimePerspective, "marketing")) { ?>

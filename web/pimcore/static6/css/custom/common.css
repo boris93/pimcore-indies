@@ -100,6 +100,20 @@ p{
 	background-color: transparent;
 }
 
+.pimcore_navigation_flyout .x-menu-item-icon-default {
+    background: url(/pimcore/static6/img/icon/arrowhead-right.png) no-repeat 10px center !important;
+    background-size: 10px !important;
+}
+
+.pimcore_navigation_flyout .pimcore_icon_overlay_go:before{
+	background: none !important;
+}
+
+.pimcore_navigation_flyout .pimcore_icon_overlay_delete:before{
+	background: none !important;
+}
+
+
 #pimcore_status{
 	left: 25px;
 }
