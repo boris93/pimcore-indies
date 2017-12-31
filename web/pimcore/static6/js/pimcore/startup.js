@@ -494,7 +494,7 @@ Ext.onReady(function () {
                                 region: 'west',
                                 id:'pimcore_panel_tree_left',
                                 split:false,
-                                width:300,
+                                width:280,
                                 minSize:175,
                                 collapsible:true,
                                 collapseMode: 'header',

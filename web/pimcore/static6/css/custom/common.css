@@ -178,6 +178,10 @@ p{
 	margin-top: -5px;
 }
 
+.x-panel-header-collapsed{
+	margin-top: 10px;	
+}
+
 .x-accordion-hd .x-tool-collapse-top:before, .x-accordion-hd .x-tool-collapse-bottom:before{
 	color: #818181;
 }
@@ -201,7 +205,11 @@ p{
     background-size: 20px 100%;
     background-repeat: no-repeat;
     background-color: rgba(234, 239, 244, 1);
-    padding-left: 25px;
+    padding-left: 0;
+}
+
+#pimcore_panel_tree_left-innerCt{
+	margin-left: 15px;	
 }
 
 #pimcore_panel_tree_left > .x-panel-header-default-horizontal.x-header-noborder{
@@ -232,6 +240,49 @@ p{
 
 .x-panel-header-default .x-tool-img {
     background-color: transparent;
+}
+
+/* Custom Footer Styles */
+#custom_footer{
+	width: 100%;
+    height: 50px;
+    background: #CAD5DE;
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    color: #4b0d83;
+    font-size: 12px;
+}
+
+.footer-block{
+	width: 33%;
+    text-align: center;
+    padding: 12px 40px;
+}
+
+.footer-block.support-button .x-btn{
+	padding: 5px 10px;
+}
+
+.footer-block ul{
+	list-style: none;
+	margin: auto;
+	margin-top: 5px;
+}
+
+.footer-block ul li{
+	display: inline;
+}
+
+.footer-block ul li a{
+	color: #4b0d83;
+	text-decoration: none;
+}
+
+.footer-block .copyright{
+	margin-top: 5px;
 }
 
 /** Window body styles **/

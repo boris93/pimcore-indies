@@ -172,8 +172,23 @@ $runtimePerspective = \Pimcore\Config::getRuntimePerspective($user);
 </a>
 
 <div id="pimcore_signet" data-menu-tooltip="Pimcore Platform (<?= \Pimcore\Version::getVersion() ?>|<?= \Pimcore\Version::getRevision() ?>)" style="text-indent: -10000px">
-    BE RESPECTFUL AND HONOR OUR WORK FOR FREE & OPEN SOURCE SOFTWARE BY NOT REMOVING OUR LOGO.
-    WE OFFER YOU THE POSSIBILITY TO ADDITIONALLY ADD YOUR OWN LOGO IN PIMCORE'S SYSTEM SETTINGS. THANK YOU!
+        BE RESPECTFUL AND HONOR OUR WORK FOR FREE & OPEN SOURCE SOFTWARE BY NOT REMOVING OUR LOGO.
+        WE OFFER YOU THE POSSIBILITY TO ADDITIONALLY ADD YOUR OWN LOGO IN PIMCORE'S SYSTEM SETTINGS. THANK YOU!
+    </div>
+<div id="custom_footer">
+    
+    <div class="footer-block support-button">
+        <a href="#" class="x-btn x-btn-default-small x-btn-inner-default-small">Submit a Support Ticket</a>
+    </div>
+    <div class="footer-block privacy">
+    <ul>
+        <li><a href="#">Privacy Policy</a></li> |
+        <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+    </div>
+    <div class="footer-block">
+        <div class="copyright">© GunStudio LLC.</div>
+    </div>
 </div>
 
 <div id="pimcore_tooltip" style="display: none;"></div>
