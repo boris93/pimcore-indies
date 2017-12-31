@@ -148,6 +148,62 @@ p{
 	background: #4b0d83;
 }
 
+/* Side Panel */
+.x-tool-collapse-left:before {
+    content: "\f060";
+    color: #4b0d83;
+}
+
+.x-tool-expand-right:before {
+    content: "\f061";
+    color: #4b0d83;
+}
+
+.x-layout-split-left, .x-layout-split-right{
+	display: none;
+}
+
+
+
+#pimcore_panel_tree_left-body{
+	padding-right: 20px !important;
+    background: linear-gradient(to right, rgba(234, 239, 244, 1) , rgba(117, 120, 122, 0.25));
+    background-position: right;
+    background-size: 20px 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(234, 239, 244, 1);
+    padding-left: 10px;
+}
+
+#pimcore_panel_tree_left > .x-panel-header-default-horizontal.x-header-noborder{
+	background: linear-gradient(to right, rgba(234, 239, 244, 1) , rgba(117, 120, 122, 0.25));
+    background-position: right;
+    background-size: 20px 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(234, 239, 244, 1);
+}
+
+.x-panel-header-default-vertical.x-header-noborder {
+    background: linear-gradient(to right, rgba(234, 239, 244, 1) , rgba(117, 120, 122, 0.25));
+    background-position: right;
+    background-size: 20px 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(234, 239, 244, 1);
+}
+
+.x-splitter-default{
+
+}
+
+
+.x-panel-header-default .x-tool-img {
+    background-color: transparent;
+}
+
+.x-panel-header-default .x-tool-img {
+    background-color: transparent;
+}
+
 /** Window body styles **/
 .x-window-default {
 	border-color: #4C0D83;

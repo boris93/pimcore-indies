@@ -493,13 +493,16 @@ Ext.onReady(function () {
                             {
                                 region: 'west',
                                 id:'pimcore_panel_tree_left',
-                                split:true,
+                                split:false,
                                 width:300,
                                 minSize:175,
                                 collapsible:true,
                                 collapseMode: 'header',
                                 animCollapse:false,
-                                layout:'accordion',
+                                layout:{
+                                    type: 'accordion',
+                                    padding: 10
+                                },
                                 layoutConfig:{
                                     animate:false
                                 },
