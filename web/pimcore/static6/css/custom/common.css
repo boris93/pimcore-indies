@@ -8,6 +8,10 @@ body {
 	padding: 10px 0px 0 90px !important;
 }
 
+#pimcore_body-body{
+	background-color: transparent;
+}
+
 .x-panel-body{
 
 }
@@ -163,7 +167,32 @@ p{
 	display: none;
 }
 
+.x-accordion-item{
+	background: #ffffff;
+    padding: 20px;
+    left: 0 !important;
+    
+}
 
+.x-accordion-item.x-collapsed{
+	margin-top: -5px;
+}
+
+.x-accordion-hd .x-tool-collapse-top:before, .x-accordion-hd .x-tool-collapse-bottom:before{
+	color: #818181;
+}
+
+.x-tool-right:before{
+	color: #818181;	
+}
+
+.x-accordion-hd .x-tool-expand-top:before, .x-accordion-hd .x-tool-expand-bottom:before{
+	color: #818181;		
+}
+
+.x-panel-header-default-horizontal.x-header-noborder {
+    border-radius: 3px;
+}
 
 #pimcore_panel_tree_left-body{
 	padding-right: 20px !important;
@@ -172,7 +201,7 @@ p{
     background-size: 20px 100%;
     background-repeat: no-repeat;
     background-color: rgba(234, 239, 244, 1);
-    padding-left: 10px;
+    padding-left: 25px;
 }
 
 #pimcore_panel_tree_left > .x-panel-header-default-horizontal.x-header-noborder{
@@ -181,6 +210,7 @@ p{
     background-size: 20px 100%;
     background-repeat: no-repeat;
     background-color: rgba(234, 239, 244, 1);
+    border-radius: 5px 5px 0 0;
 }
 
 .x-panel-header-default-vertical.x-header-noborder {
