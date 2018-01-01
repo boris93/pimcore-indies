@@ -1051,6 +1051,7 @@ pimcore.layout.toolbar = Class.create({
         if (this.searchMenu) {
             Ext.get("pimcore_menu_search").on("mousedown", this.showSubMenu.bind(this.searchMenu));
         }
+        Ext.get("pimcore_menu_home").on("mousedown", this.openHome);
 
         Ext.each(Ext.query(".pimcore_menu_item"), function (el) {
             el = Ext.get(el);
@@ -1372,6 +1373,16 @@ pimcore.layout.toolbar = Class.create({
         }
         catch (e) {
             pimcore.globalmanager.add("notes", new pimcore.element.notes());
+        }
+    },
+
+	openHome: function () {
+
+        try {
+            pimcore.globalmanager.get("home_start").activate();
+        }
+        catch (e) {
+            pimcore.globalmanager.add("home_start", new pimcore.home.start());
         }
     },
 

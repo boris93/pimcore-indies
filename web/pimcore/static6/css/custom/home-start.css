@@ -1,0 +1,36 @@
+#home-start-panel {
+	padding: 50px;
+	height: auto !important;
+}
+
+#home-start-panel .x-panel-body {
+	height: auto !important;
+}
+
+#home-start-panel .home-start-button-container {
+	text-transform: uppercase;
+	width: 200px;
+	margin-left: 5px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	height: 200px;
+	float: left;
+	text-align: center;
+	border: 1px solid #d4d4d4;
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px #d4d4d4;
+}
+
+#home-start-panel .x-img {
+	height: 50px;
+	margin-top: 50px;
+}
+
+#home-start-panel .x-btn-default-medium {
+	width: 150px;
+	margin-top: 30px;
+}
+
+#home-start-panel .x-btn-inner {
+	font-weight: 700;
+}

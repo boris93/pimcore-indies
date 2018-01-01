@@ -3140,3 +3140,13 @@ pimcore.helpers.csvExportWarning = function (callback) {
     window.show();
 };
 
+pimcore.helpers.getTabHeader = function(){
+	var userName = pimcore.globalmanager.get("user").name;
+	return Ext.create({
+		xtype: "grid",
+		region: "north",
+		cls: "main-editor-header",
+		title: t("welcome") + (userName ? " " + userName : "")
+	});
+};
+

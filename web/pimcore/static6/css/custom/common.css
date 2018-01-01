@@ -288,6 +288,7 @@ p{
 /** Window body styles **/
 .x-window-default {
 	border-color: #4C0D83;
+	border-radius: 4px;
 }
 
 .x-window-header-default {
@@ -325,8 +326,11 @@ p{
 }
 
 .x-btn-inner-default-small {
-	color: #ffffff;
 	font-weight: 700;
+}
+
+.x-btn-inner {
+	color: #ffffff;
 }
 
 /* Default */
@@ -365,3 +369,7 @@ p{
 	border-color: #d0d0d0;
 }
 /* Input box styles end */
+
+.main-editor-header {
+	height: 34px !important;
+}
