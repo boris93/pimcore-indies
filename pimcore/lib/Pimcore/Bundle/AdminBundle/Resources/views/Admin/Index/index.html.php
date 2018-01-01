@@ -281,6 +281,9 @@ $scripts = array(
     // tools
     "pimcore/tool/paralleljobs.js",
     "pimcore/tool/genericiframewindow.js",
+    
+    // home
+    "pimcore/home/start.js",
 
     // settings
     "pimcore/settings/user/panels/abstract.js",

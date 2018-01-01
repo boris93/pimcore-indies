@@ -34,3 +34,16 @@
 #home-start-panel .x-btn-inner {
 	font-weight: 700;
 }
+
+#home-start-panel-helper {
+	float:left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#home-start-panel-helper .x-panel-body {
+	color: #74439b;
+	text-align:center;
+	font-size: 1.1em;
+	font-weight: 700;
+}

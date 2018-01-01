@@ -101,7 +101,13 @@ pimcore.home.start = Class.create({
 			new Ext.Panel({
                 border: false,
                 id: "home-start-panel",
-                items: buttons
+                items: buttons.concat([
+                	new Ext.Panel({
+						id: "home-start-panel-helper",
+						border:false,
+						html: 'Make a selection above to get started.'
+					})
+                ])
             })
 		];
     }
