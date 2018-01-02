@@ -179,7 +179,8 @@ p{
 }
 
 .x-panel-header-collapsed{
-	margin-top: 10px;	
+	margin-top: -1px;
+    border-radius: 5px;
 }
 
 .x-accordion-hd .x-tool-collapse-top:before, .x-accordion-hd .x-tool-collapse-bottom:before{
