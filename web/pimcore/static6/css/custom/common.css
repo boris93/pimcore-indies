@@ -307,6 +307,12 @@ p{
 .x-window-body-default {
 	color: #818181;
 }
+
+/* Hide symphony toolbar */
+.sf-minitoolbar{
+	display: none !important;
+}
+
 /** Window body styles end **/
 
 
