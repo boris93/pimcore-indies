@@ -75,6 +75,11 @@ pimcore.home.start = Class.create({
 			},
 			{
 				text: t('packages'),
+				handler: function(){
+					pimcore.helpers.openTab("packages_start", function(){
+						return new pimcore.packages.start();
+					});
+				}
 			},
 			{
 				text: t('settings'),
@@ -90,7 +95,9 @@ pimcore.home.start = Class.create({
 						text: i.text,
 				        scale: "medium",
 				        handler: function () {
-				            alert(i.text);
+				        	if(typeof i.handler == 'function')
+				        		i.handler();
+				            else alert(i.text);
 				        }.bind(this)
 				    })
 				]

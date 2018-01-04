@@ -284,6 +284,9 @@ $scripts = array(
     
     // home
     "pimcore/home/start.js",
+    
+    // packages
+    "pimcore/packages/start.js",
 
     // settings
     "pimcore/settings/user/panels/abstract.js",

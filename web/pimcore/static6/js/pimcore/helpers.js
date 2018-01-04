@@ -3150,3 +3150,12 @@ pimcore.helpers.getTabHeader = function(){
 	});
 };
 
+pimcore.helpers.openTab = function(id, newTabProvider){
+	try {
+		pimcore.globalmanager.get(id).activate();
+	}
+	catch (e) {
+		pimcore.globalmanager.add(id, newTabProvider());
+	}
+}
+
