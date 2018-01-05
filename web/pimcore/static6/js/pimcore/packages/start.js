@@ -32,7 +32,7 @@ pimcore.packages.start = Class.create({
                 title: t("packages"),
                 border: false,
                 closable: true,
-                scrollable: 'y',
+                scrollable: true,
                 items: [
                 	pimcore.helpers.getTabHeader(),
                 ].concat(this.getPackagesStart())
@@ -54,6 +54,116 @@ pimcore.packages.start = Class.create({
     },
 
     getPackagesStart: function () {
-		return [];
+    	var numColumns = 5;
+    	var items = [
+			{
+				html: '',
+				cellCls: 'header-cell'				
+			},
+			{
+				html: t('site_architecture'),
+				cellCls: 'header-cell',
+				value: 'site_architecture'
+			},
+			{
+				html: t('marketing'),
+				cellCls: 'header-cell',
+				value: 'marketing'
+			},
+			{
+				html: t('hosting'),
+				cellCls: 'header-cell',
+				value: 'hosting'
+			},
+			{
+				html: t('support'),
+				cellCls: 'header-cell',
+				value: 'support'
+			}
+		];
+		var options = ['basic', 'advanced', 'premium', 'custom'];
+		
+		options.forEach(function(option){
+			items.push({
+				html: t(option),
+				cellCls: 'option-name'
+			});
+			for(var i=1; i<numColumns; i++){
+				items.push({
+					//html: items[i].value + "_" + option,
+					html: "PH",
+					cellCls: 'option-selection'
+				});
+			}
+		});
+		
+    	var table = Ext.create('Ext.panel.Panel', {
+			layout: {
+				type: 'table',
+				columns: numColumns
+			},
+			items: items
+		});
+		
+		return [
+			Ext.create('Ext.container.Container', {
+				cls: "packages-page-container",
+				items: [
+					table,
+			
+					Ext.create('Ext.container.Container', {
+						cls: "packages-page-button-row",
+						items: [
+							this.getUpdateButton()
+						]
+					}),
+			
+					Ext.create('Ext.container.Container', {
+						cls: "packages-page-button-row-title",
+						items: [
+							{
+								html: t("integrations")
+							}
+						]
+					}),
+			
+					Ext.create('Ext.container.Container', {
+						cls: "packages-page-button-row",
+						items: [
+							this.getUpdateButton()
+						]
+					}),
+			
+					Ext.create('Ext.container.Container', {
+						cls: "packages-page-button-row-title",
+						items: [
+							{
+								html: t("extensions")
+							}
+						]
+					}),
+			
+					Ext.create('Ext.container.Container', {
+						cls: "packages-page-button-row",
+						items: [
+							this.getUpdateButton()
+						]
+					})
+				]
+			})
+		]
+    },
+    
+    getUpdateButton: function(){
+    	return new Ext.Button({
+			text: t("update"),
+	        scale: "medium",
+	        handler: function () {
+	        	if(typeof i.handler == 'function')
+	        		i.handler();
+	            else alert(i.text);
+	        }
+	    });
     }
+    
 });

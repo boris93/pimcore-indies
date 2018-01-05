@@ -1,0 +1,92 @@
+#pimcore_packages_start .packages-page-container {
+	width: 928px;
+	margin: 50px;
+}
+
+#pimcore_packages_start .packages-page-container .x-panel-body, #pimcore_packages_start .packages-page-container .x-panel {
+	width: 100% !important;
+	height: auto !important;
+}
+
+#pimcore_packages_start .x-table-layout {
+	width: 100%;
+}
+
+#pimcore_packages_start .x-table-layout .header-cell .x-panel-body-default {
+	color: #652d90;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	height: auto !important;
+}
+
+#pimcore_packages_start .x-table-layout td {
+	max-width: 150px;
+	border-left: 1px solid #979797;
+	text-align: center;
+	height: 55px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
+#pimcore_packages_start .x-table-layout td:first-child {
+	border-left: 0;
+	text-align: left;
+}
+
+#pimcore_packages_start .x-table-layout .header-cell {
+	vertical-align: bottom;
+}
+
+#pimcore_packages_start .x-table-layout td .x-panel-body-default{
+	color: #47beaf;
+	font-size: 20px;
+	letter-spacing: 1px;
+	background-color: #f6f6f6;
+	padding: 20px 0 20px 0px;
+}
+
+#pimcore_packages_start .x-table-layout td:first-child .x-panel-body-default{
+	padding-left: 20px;
+	text-transform: capitalize;
+	border-radius: 8px 0 0 8px;
+}
+
+#pimcore_packages_start .x-table-layout td:last-child .x-panel-body-default{
+	border-radius: 0 8px 8px 0;
+}
+
+#pimcore_packages_start .x-table-layout .header-cell .x-panel-body-default{
+	background-color: #ffffff;
+	padding: 0;
+}
+
+#pimcore_packages_start .packages-page-button-row {
+	margin-top: 16px;
+}
+
+#pimcore_packages_start .packages-page-button-row .x-btn, 
+#pimcore_packages_start .packages-page-button-row-title .x-btn{
+	float: right;
+	width: 138px;
+}
+
+#pimcore_packages_start .packages-page-button-row-title:first-child {
+	margin-top: 16px;
+}
+
+#pimcore_packages_start .packages-page-button-row-title{
+	border-bottom: 1px solid #47beaf;
+	padding-bottom: 10px;
+}
+
+#pimcore_packages_start .packages-page-button-row-title .x-panel-body-default {
+	font-size: 20px;
+	line-height: 18px;
+	letter-spacing: 2.5px;
+	color: #652d90;
+	text-transform: uppercase;
+	border-bottom: 1px solid #47beaf;
+}

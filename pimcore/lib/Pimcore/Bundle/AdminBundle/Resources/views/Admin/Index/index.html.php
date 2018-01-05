@@ -217,6 +217,7 @@ $styles = array(
     "/pimcore/static6/css/custom/common.css",
     "/pimcore/static6/css/custom/editor-page.css",
     "/pimcore/static6/css/custom/home-start.css",
+    "/pimcore/static6/css/custom/packages-start.css"
 );
 ?>
 

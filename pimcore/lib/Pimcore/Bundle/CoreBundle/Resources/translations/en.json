@@ -1126,6 +1126,8 @@
   "dashboard": "Dashboard",
   "dashboards": "Dashboards",
   "packages": "Packages",
+  "site_architecture": "site architecture",
+  
   "add_dashboard": "Add Dashboard",
   "create_new_dashboard": "Create Dashboard",
   "dashboard_already_exists": "Dashboard with same name already exists!",
