@@ -195,7 +195,7 @@ p{
 }
 
 .x-layout-split-left, .x-layout-split-right{
-	display: none;
+    background: #d6d6d6;
 }
 
 .x-accordion-item{
@@ -213,7 +213,7 @@ p{
 
 .x-panel-header-collapsed{
 	margin-top: -1px;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
 }
 
 .x-accordion-hd .x-tool-collapse-top:before, .x-accordion-hd .x-tool-collapse-bottom:before{
@@ -285,19 +285,19 @@ p{
     background-position: right;
     background-size: 20px 100%;
     background-repeat: no-repeat;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 0px 0 0;
 }
 
 .x-panel-header-default-vertical.x-header-noborder {
-    background: linear-gradient(to right, rgba(234, 239, 244, 1) , rgba(117, 120, 122, 0.25));
+    background: #ededed;
     background-position: right;
     background-size: 20px 100%;
     background-repeat: no-repeat;
-    background-color: rgba(234, 239, 244, 1);
 }
 
 .x-splitter-default{
-
+	background: #ededed;
+	border-radius: 0 5px;
 }
 
 
